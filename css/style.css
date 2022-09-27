@@ -1,0 +1,420 @@
+@font-face {
+    font-family: "Inter";
+    src: url(../fontes/Inter-Regular.ttf) format("truetype");
+}
+a{
+    text-decoration: none;
+    color: unset;
+}
+li{
+    list-style-type: none;
+    
+}
+button{
+    cursor: pointer;
+}
+.picture{
+    display: flex;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+}
+.img{
+    width: 191.81px;
+    height: 140px;
+}
+.homeHeader{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0px 4px 30px -10px rgb(0,0,0.25);
+    background-color: #ffffff;
+    
+    
+    
+}
+.weartake{
+    font-family: "Inter";
+    font-weight: 700;
+    line-height: 24px;
+    font-size: 30px;
+    color: #292929;
+    margin-left: 118px;
+    margin-top: 23px;
+    margin-bottom: 23px;
+}
+.botoesHeader{
+    display: flex;
+    justify-content: space-around;
+}
+.guia{
+    margin: 20px;
+    font-family: "inter";
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 16px;
+    color: #242424;
+}
+#todos{
+    font-weight: 600;
+    color: #292929;
+}
+.floatTools{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    min-height: 600px;
+    align-items: center;
+    float: right;
+    top: 52px;
+    position: sticky; 
+    padding: 52px 55px;
+    gap: 10px;
+    /*não estava especificado que esses objetos deveriam flutuar com a página,
+    mas resolvi fazer assim porque creio que é prático para o cliente*/
+}
+#busca{
+box-sizing: border-box;
+width: 246px;
+height: 50px;
+font-family: "Inter";
+font-weight: 400;
+font-size: 14px;
+line-height: 16px;
+background-color: #f5f5f5;
+border: 1px solid #f5f5f5;
+padding: 14px;
+color: #242424;
+}
+#pesquisar{
+    background-color: #37268c;
+    color: #ffffff;
+    padding: 17px 9px 17px 11px;
+    border-color: inherit;
+    width: 96px;
+    height: 50px;
+}
+/*mudar cor quando clicado*/
+#pesquisar:active{
+    background-color: #ffffff;
+    color: #37268c;
+}
+.carrinho{
+padding-top: 30px;
+width: 347px;
+height: 264px;
+
+
+}
+.carrinhoHeader{
+    background-color: #37268c;
+    width: 347px;
+    height: 50px;
+    color: #ffffff;
+    font-family: "Inter";
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 24px;
+    text-align: center;
+    padding-top: 13px;
+}
+.aviso{
+    font-family: "Inter";
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 16px;
+    color: #242424;
+    margin: 4px;
+}
+.destaque{
+    font-weight: 700;
+    font-size: 22px;
+    line-height: 24px;
+}
+/*.vitrine{
+    display: flex;
+    align-items: center;
+    align-content: flex-start;
+    justify-content: flex-start;
+    margin-top: 50px;
+    flex-wrap: wrap;
+}*/
+/* Para variar do flex*/
+.vitrine{
+    display: grid;
+    place-items: center;
+    align-content: center;
+    justify-content: center;
+    gap: 40px 22px;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+.card{
+    width: 296px;
+    background: #FFFFFF;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    border: 4px solid #f5f5f5;
+    margin: 20px;
+}
+.card:hover.card{
+    border: 4px solid #37268c;
+}
+.frame{
+    background-color: #f5f5f5;
+    width: 296px;
+    height: 154px;
+}
+.info{
+box-sizing: border-box;
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: flex-start;
+padding: 20px 15px;
+gap: 15px;
+background: #FFFFFF;
+width: 296px;
+height: Hug (254px);
+}
+.tagProduto{
+box-sizing: border-box;
+background-color: #2e245e;
+color: #ffffff;
+display: flex;
+flex-direction: row;
+justify-content: center;
+align-items: center;
+padding: 12px 5px;
+gap: 10px;
+width: hug(73px);
+height: hug(24px);
+font-family: 'Inter';
+font-style: normal;
+font-weight: 400;
+font-size: 12px;
+line-height: 0px;
+}
+.nomeProduto{
+font-family: 'Inter';
+font-weight: 700;
+font-size: 18px;
+line-height: 24px;
+color: #292929;
+height: 24px;
+width: hug(269px);
+left: 15px;
+top: 59px;
+
+
+}
+.descricaoProduto{
+font-family: 'Inter';
+font-weight: 400;
+font-size: 14px;
+line-height: 24px;
+color: #242424;
+height: 72px;
+width: 269px;
+left: 0px;
+top: 0px;
+
+}
+.valor{
+font-family: 'Inter';
+font-weight: 600;
+font-size: 14px;
+line-height: 16px;
+color: #2E245E;
+height: hug(16px);
+width: 269px;
+left: 15px;
+top: 187px;
+
+
+}
+.add{
+background-color: #ffffff;
+border: inherit;
+font-family: 'Inter';
+font-weight: 500;
+font-size: 14px;
+line-height: 16px;
+color: #242424;
+}
+.add:hover{
+    background-color: #2e245e;
+    color: #ffffff
+}
+li.guia:hover{
+    background-color: #37268c;
+    color: #ffffff;
+}
+li#todos:hover{
+    background-color: #37268c;
+    color: #ffffff;
+}
+/*============== Edição do carrinho =================*/
+.avisoBox{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 347px;
+    height: 329px;
+}
+.listacarrinho .nomeProduto{
+    width: hug(176px);
+    height: hug(24px);
+    font-family: 'Inter';
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 24px;
+    color: #333333;
+    margin: 0px;
+}
+.listacarrinho .valor{
+    width: 70px;
+    height: 16px;
+    font-family: 'Inter';
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 16px;
+    color: #2E245E;
+    margin: 0px;
+}
+.remove{
+    background-color: #f5f5f5;
+    border: inherit;
+    font-family: 'Inter';
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 24px;
+    color: #242424;
+    width: hug(115px);
+    height: 24px;
+}
+.remove:hover{
+    background-color: #2e245e;
+    color: #ffffff
+}
+
+.listacarrinho{
+    display: flex;
+    overflow: hidden;
+    overflow-y: scroll;
+    align-items: center;
+    flex-direction: column;
+    min-height: 329px;
+    width: 347px;
+    height: 329px;
+    background-color: #f5f5f5;
+}
+.listacarrinho::-webkit-scrollbar {
+    width: 7px;
+    height: 7px;
+  }
+  
+.listacarrinho::-webkit-scrollbar-track {
+    background: initial;
+  }
+  
+.listacarrinho::-webkit-scrollbar-thumb {
+    background-color: #00000033;
+    border-radius: 2px;
+    margin-right: 7px;
+  }
+.listacarrinho  .mCard{
+    width: 282px;
+    height: 92px;
+    background: #f5f5f5;
+    display: flex;
+    flex-direction: row;
+    padding: 0px;
+    gap: 18px;
+    margin-bottom: 30px;
+
+    margin-top: 28px;
+
+}
+.listacarrinho .frame{
+    background-color: #ffffff;
+    width: hug(88px);
+    height: 92px;
+}
+.listacarrinho .info{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 14px;
+    flex: none;
+    order: 1;
+    flex-grow: 0;
+    background: #f5f5f5 ;
+    height: hug(92px);
+    width: hug(176px);
+    left: 106px;
+    top: 0px;
+    border-radius: 0px;
+    flex: none;
+    order: 1;
+    flex-grow: 0;
+
+}
+.listacarrinho .img{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 14px;
+    height: 67px;
+    width: 88px;
+}
+/*====================================================*/
+.total{
+    display: flex;
+    flex-direction: column;
+    place-items: center;
+    place-content: center;
+    margin-top: 120px;
+    height: 126px;
+    width: 345px;
+    background: #292929;
+}
+.totalFinal{
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 24px;
+    color: #FFFFFF;
+}
+.qnt{
+    width: 70px;
+height: 16px;
+
+/* Body-Semi-Bold */
+
+font-family: 'Inter';
+font-style: normal;
+font-weight: 600;
+font-size: 14px;
+line-height: 16px;
+/* identical to box height, or 114% */
+
+
+/* color-primary */
+
+color: #2E245E;
+
+
+/* Inside auto layout */
+
+flex: none;
+order: 1;
+flex-grow: 0;
+}
